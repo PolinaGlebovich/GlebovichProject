@@ -31,6 +31,6 @@ public class RegExExample {
 //        numbersMatcher.usePattern(Pattern.compile("\\w+"));
 
         numbersMatcher.reset();
-        numbersMatcher.results().map(MatchResult::group).map(String:: length).forEach(length -> System.out.println(length));
+      //  numbersMatcher.results().map(MatchResult::group).map(String:: length).forEach(length -> System.out.println(length));
     }
 }
