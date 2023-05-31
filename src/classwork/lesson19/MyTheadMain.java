@@ -3,7 +3,10 @@ package classwork.lesson19;
 import java.time.LocalDateTime;
 
 public class MyTheadMain {
-
+// wait, notify
+    //CountLatch 5
+    // Semaphore
+ //   Complitable Future
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Start: " + LocalDateTime.now());
         MyThread thread1 = new MyThread("first");
