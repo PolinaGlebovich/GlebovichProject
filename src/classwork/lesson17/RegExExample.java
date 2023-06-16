@@ -18,19 +18,20 @@ public class RegExExample {
         System.out.println(numberMathcers2.matches());
 
         //найти числа в строчке
-        if(numbersMatcher.find()) {  // мы подаём команду что-то подходящее под шаблон
+        if (numbersMatcher.find()) {  // мы подаём команду что-то подходящее под шаблон
             System.out.println(numbersMatcher.start() + "  " + numbersMatcher.end());  // даёт нам точное
             System.out.println(numbersMatcher.group()); // возвращает этот кусок
         }
 
 //        while (numbersMatcher.find()) {  // мы подаём команду что-то подходящее под шаблон
-            System.out.println(numbersMatcher.start() + "  " + numbersMatcher.end());  // даёт нам точное
-            System.out.println(numbersMatcher.group()); // возвращает этот кусок
+        System.out.println(numbersMatcher.start() + "  " + numbersMatcher.end());  // даёт нам точное
+        System.out.println(numbersMatcher.group()); // возвращает этот кусок
 //        }
 //        numbersMatcher.reset();
 //        numbersMatcher.usePattern(Pattern.compile("\\w+"));
 
-        numbersMatcher.reset();
-        numbersMatcher.results().map(MatchResult::group).map(String:: length).forEach(length -> System.out.println(length));
+//        numbersMatcher.reset();
+//        numbersMatcher.results().map(MatchResult::group).map(String:: length).forEach(length -> System.out.println(length));
+//    }
     }
 }
